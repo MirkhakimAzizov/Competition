@@ -1,10 +1,12 @@
 .hard {
+    width: 100%;
     margin-top: 25px;
 }
 
 .linkMain {
     background-color: rgb(56, 236, 11);
     padding: 8px 25px;
+    margin-right: 20px;
     border-radius: 5px;
     color: rgb(36, 25, 25);
     font-size: 22px;
@@ -22,7 +24,7 @@
 
 .degree {
     overflow: hidden;
-    width: 660px;
+    max-width: 500px;
     height: 10px;
     border-radius: 5px;
     background: #2ee738;
@@ -31,22 +33,31 @@
 }
 
 .levelInfo {
-    width: 56%;
+    width: 50%;
+    margin: 0 20px;
     margin-left: auto;
 }
 
-
-/* .hard__inner {} */
-
 .hard__inner_wrapper {
-    margin-top: 20px;
+    margin: 10px 0 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, min(323px));
+    grid-template-columns: repeat(5, minmax(150px, 280px));
+    grid-template-rows: repeat(4, minmax(100px, 130px));
+}
+
+@media only screen and (max-width:768px) {
+    .hard__inner_wrapper {
+        grid-template-columns: repeat(4, minmax(50px, 120px));
+        grid-template-rows: repeat(4, minmax(50px, 100px));
+    }
 }
 
 .field {
+    margin: 30px 0 20px;
+    /* transform: rotate(90deg); */
+    position: relative;
     text-align: center;
-    border: 0.5px solid silver;
+    /* border: 0.5px solid silver; */
     height: 150px;
 }
 
@@ -59,6 +70,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* display: none; */
 }
 
 
@@ -68,7 +80,7 @@
     background: #b621fe;
     border: none;
     z-index: 1;
-    padding: 8px 25px;
+    padding: 8px 16px;
     border-radius: 8px;
     overflow: hidden;
     font-size: 22px;
