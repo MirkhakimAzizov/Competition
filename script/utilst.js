@@ -13,6 +13,6 @@ const words = {
         eng:["label", "distance", "popular","select","travel","function","favourite","security","tradition","different","historical","diamond","experiment","paragraph","furniture","keyboard","umbrella","charge","tomorrow","breakfast","several","captain","stomach","grateful","daughter","increase","intention","crystal","oxygen","memorie"],
         uz:["yorliq", "masofa", "mashhur","belgilamoq","sayohat","funksiya","sevimli","xavfsizlik","an'ana","boshqacha","tarixiy","olmos","tajriba","paragraf","mebel","klaviatura","soyabon","zaryad","ertaga","nonushta","bir nechta","kapitan","oshqozon","minnatdor","qiz","ko'paytirish","niyat","kristal","kislorod","xotira"],
     },
-};
+}
 
 
