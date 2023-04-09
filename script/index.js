@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 let elForm = document.querySelector('.register__inner');
 
