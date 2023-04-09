@@ -50,7 +50,7 @@ for (let i = 0; i < 20; i++) {
 }
 numberEngArr.slice(0, 10).forEach(index => {
     document.querySelector(`.btn${index}`).innerHTML = `
-    <img class="button-image" src="https://assets.codepen.io/4175254/mario.png" alt="img" />
+    <img class="button-image rounded-pill" src="https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/94/98/ae/9498ae73-008a-55d7-2845-f3be6ff6d527/source/512x512bb.jpg" alt="img" />
     <span>${words.easy.eng[index]}</span>`;
     elWord[index].dataset.id = `${index}`;
 })
@@ -63,7 +63,7 @@ elWord.forEach((item, index) => {
 
 for (let i = 0; i < 10; i++) {
     document.querySelector(`.btn${numberUzArr[i]}`).innerHTML = `
-    <img class="button-image" src="https://assets.codepen.io/4175254/mario.png" alt="" />
+    <img class="button-image rounded-pill" src="https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/94/98/ae/9498ae73-008a-55d7-2845-f3be6ff6d527/source/512x512bb.jpg" alt="" />
     <span>${ words.easy.uz[`${numberEngArr[i]}`]}</span>`;
     elWord[i].dataset.id = `${i}`;
 }
@@ -93,14 +93,14 @@ allBtn.addEventListener('click', evt => {
             }
         } else if (s == 2) {
             translate2 = evt.target.textContent.trim()
-            if (words.easy.eng.indexOf(translate2) > 0) {
+            if (words.easy.eng.indexOf(translate2) > 0 && translate1!=translate2) {
                 index2 = words.easy.eng.indexOf(translate2);
                 console.log(index2);
             } else {
                 index2 = words.easy.uz.indexOf(translate2);
                 console.log(index2);
             }
-            if (index1 == index2) {
+            if (index1 == index2 && translate1!=translate2) {
                 console.log('a');
                 elBall.textContent = `Ball: ${++b}`
             } else {
